@@ -11,6 +11,8 @@ $req->execute();
 
 $result = $req->fetch();
 
+var dumb($result);
+
 if(!$result){
     $errorMessage = "Erreur de connexion";
     header("Location: ../login.php?errorMessage=" . $errorMessage);
